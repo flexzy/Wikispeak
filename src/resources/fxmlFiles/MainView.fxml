@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to top left, #9ee8ff, #5eb7ff);" stylesheets="@../styleSheets/BigYellowButton.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.MainViewController">
+   <children>
+      <ImageView fitHeight="442.0" fitWidth="505.0" layoutX="61.0" layoutY="331.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/SeekClipart.com_customizable-clip-art_3529014.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="321.0" fitWidth="676.0" layoutX="273.0" layoutY="21.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/SeekClipart.com_counseling-clipart_170433.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="456.0" fitWidth="419.0" layoutX="774.0" layoutY="331.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/SeekClipart.com_fall-thank-you-clip_2059983.png" />
+         </image>
+      </ImageView>
+      <Text fill="#fff200" layoutX="54.0" layoutY="195.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Whale I Tried&quot;; -fx-font-size: 120;" text="Welcome to VARpedia!" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="48.0" />
+         </font>
+         <effect>
+            <Shadow height="35.0" radius="17.0" width="35.0" />
+         </effect>
+      </Text>
+      <Text fill="#fff200" layoutX="54.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: &quot;Whale I Tried&quot;; -fx-font-size: 120;" text="Welcome to VARpedia!" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="286.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What would you like to explore?">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Text>
+      <VBox layoutX="399.0" layoutY="373.0" spacing="20.0">
+         <children>
+            <Button fx:id="_viewCreationButton" mnemonicParsing="false" onAction="#goToListCreationView" prefWidth="400.0" text="Past Creations!">
+               <font>
+                  <Font name="Comic Sans MS" size="32.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="BigYellowButton" />
+                  <String fx:value="buttonHover" />
+               </styleClass>
+            </Button>
+            <Button fx:id="_createCreationButton" mnemonicParsing="false" onAction="#goToSearchCreationView" prefWidth="400.0" text="Something New!">
+               <font>
+                  <Font name="Comic Sans MS" size="32.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="BigYellowButton" />
+                  <String fx:value="buttonHover" />
+               </styleClass>
+            </Button>
+            <Button fx:id="_quizButton" mnemonicParsing="false" onAction="#goToStartQuizView" prefWidth="400.0" text="Play a Game!">
+               <font>
+                  <Font name="Comic Sans MS" size="32.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="BigYellowButton" />
+                  <String fx:value="buttonHover" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="1109.0" layoutY="14.0" mnemonicParsing="false" onAction="#viewManual" text="?">
+         <font>
+            <Font name="Comic Sans MS" size="28.0" />
+         </font>
+         <styleClass>
+            <String fx:value="BigYellowButton" />
+            <String fx:value="buttonHover" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>
